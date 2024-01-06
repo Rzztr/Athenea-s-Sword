@@ -198,7 +198,7 @@ def template_select(site):
 
 	for item in templ_json['Templates']:
 		name = item['name']
-		utils.print(f'{G}[{templ_json["Plantillas"].index(item)}] {C}{name}{W}')
+		utils.print(f'{G}[{templ_json["templates"].index(item)}] {C}{name}{W}')
 
 	try:
 		selected = -1
