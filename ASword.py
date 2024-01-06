@@ -326,13 +326,13 @@ def data_parser():
 		utils.print(f'{R}[-] {C}Exception : {R}{traceback.format_exc()}{W}')
 	else:
 		var_os = info_json['os']
-		var_platform = info_json['platforma']
-		var_cores = info_json['nucleos']
+		var_platform = info_json['platform']
+		var_cores = info_json['cores']
 		var_ram = info_json['ram']
 		var_vendor = info_json['vendor']
 		var_render = info_json['render']
 		var_res = info_json['wd'] + 'x' + info_json['ht']
-		var_browser = info_json['navegador']
+		var_browser = info_json['browser']
 		var_ip = info_json['ip']
 
 		data_row.extend([var_os, var_platform, var_cores, var_ram, var_vendor, var_render, var_res, var_browser, var_ip])
@@ -361,10 +361,10 @@ def data_parser():
 			if s_code == 200:
 				data = rqst.text
 				data = loads(data)
-				var_continent = str(data['continente'])
-				var_country = str(data['Pais'])
+				var_continent = str(data['continent'])
+				var_country = str(data['country'])
 				var_region = str(data['region'])
-				var_city = str(data['ciudad'])
+				var_city = str(data['city'])
 				var_org = str(data['org'])
 				var_isp = str(data['isp'])
 
