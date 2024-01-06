@@ -196,7 +196,7 @@ def template_select(site):
 
 	templ_json = loads(templ_info)
 
-	for item in templ_json['Plantiillas']:
+	for item in templ_json['Templates']:
 		name = item['name']
 		utils.print(f'{G}[{templ_json["Plantillas"].index(item)}] {C}{name}{W}')
 
