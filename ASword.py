@@ -390,7 +390,7 @@ def data_parser():
 			utils.print(f'{R}[-] {C}Exception : {R}{traceback.format_exc()}{W}')
 		else:
 			status = result_json['status']
-			if status == 'Realizado con exito!':
+			if status == 'succes':
 				var_lat = result_json['lat']
 				var_lon = result_json['lon']
 				var_acc = result_json['acc']
