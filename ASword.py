@@ -160,9 +160,7 @@ def banner():
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
  			'''
 	utils.print(f'{G}{art}{W}\n')
-	utils.print(f'{G}[>] {C}Creado por   : {W}Olimpos team')
-	#utils.print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
-	#utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
+	utils.print(f'{G}[>] {C}Creado por   : {W}Olimpo´s team')
 	utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
