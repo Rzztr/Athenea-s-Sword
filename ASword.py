@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+#TODOS LOS DERECHOS RESERVADOS -OLIMPO-
 VERSION = '1.3.1'
 
 R = '\033[31m'  # rojo
