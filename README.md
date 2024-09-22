@@ -18,6 +18,13 @@ Proceso:
          -cd Athenea-s-Sword
          -python3 ASword.py
          -[HACER LOS PASOS SOLICITADOS Y MOSTRADOS EN TERMINAL]
+
+         INSTALACION DE DEPENDENCIAS Y LIBRERIAS
+                (Si al ejecuar devuelve la terminal un error de dependencias,       corre el comando siguiente)
+                
+            chmod +x install.sh
+            ./install.sh
+
          -ngrok ngrok http http://localhost:8080
 
 
@@ -52,3 +59,9 @@ Proceso:
                            de webs futuros donde el puerto sea requerido...
                                     SOBRE AVISO NO HAY ENGAÑO
                   
+                                NOTAS FINALES PARA PUBLICO GENERAL
+                        El equipo de desarrollo de olimpo, anteriores y colaboradores 
+                        no nos haremos responsables del mal uso y de problemas legales de
+                        su mal uso en el internet, QUE, puede llegar a generar, se desarrollo
+                        con fines eticos y propositos de educacion y aprendizaje.
+                        
